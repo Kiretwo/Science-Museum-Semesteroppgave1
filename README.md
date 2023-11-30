@@ -1,0 +1,2 @@
+# Science-Museum-Semesteroppgave1
+ 

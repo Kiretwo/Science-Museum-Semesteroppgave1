@@ -7,7 +7,7 @@
   list-style: none;
 }
 body{
-  background-color: antiquewhite;
+  background-color: #faebd7;
 }
 /*INDEX.HTML*/
 /*header*/
@@ -58,7 +58,7 @@ a.active, nav a:hover{
   color: #FF8C1A;
   transition: 0.3s;
 }
-.hamburger-menu{
+.menu{
   font-size: 1.5rem;
   color: #000000;
   line-height: 100px;
@@ -70,17 +70,19 @@ a.active, nav a:hover{
 }
 
 
-@media (max-width: 900px){
-  .hamburger-menu{
+@media (max-width: 700px){
+  .menu{
     display: block;
   }
   ul{
     position: fixed;
     width: 100%;
     height: 100vh;
+    background: #FFFFFF;
     top: 100px;
     right: 0;
     text-align: center;
+    display: none;
   }
   nav ul li{
     display: block;
@@ -90,8 +92,8 @@ a.active, nav a:hover{
     font-size: 1.25rem;
     text-transform: uppercase;
   }
-  #menu-checkbox:checked ~ nav{
-    right: 0;
+  #menu-checkbox:checked ~ ul{
+    display: block;
   }
 }
 

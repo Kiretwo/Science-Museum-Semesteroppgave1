@@ -118,7 +118,7 @@ footer{
   position: absolute;
   bottom: 0;
   width: 100%;
-  background: white;
+  background: #FFFFFF;
 }
 .footer-container{
   display: grid;
@@ -177,6 +177,8 @@ footer{
   font-weight: 400;
   font-size: 1.1rem;
 }
+/*EXPLORE*/
+
 /*VISIT*/
 /*main*/
 .visit-grid-container{
@@ -209,7 +211,7 @@ footer{
   padding-bottom: 8px;
 }
 #opening-hours{
-  background: white;
+  background: #FFFFFF;
   border: #000000;
   border-width: 2px;
   border-style: solid;

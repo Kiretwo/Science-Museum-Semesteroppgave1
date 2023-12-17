@@ -140,7 +140,7 @@ footer{
   grid-area: footer1;
 }
 .footer-links ul li{
-  padding-bottom: 5px;
+  padding-bottom: 7px;
 }
 .footer-links ul li a{
   color: #000000;
@@ -163,7 +163,7 @@ footer{
 .footer-socials i{
   color: #000000;
   font-size: 1.6em;
-  padding-bottom: 10px;
+  padding-bottom: 12px;
 }
 .footer-heading, .footer-text{
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
@@ -178,7 +178,104 @@ footer{
   font-size: 1.1rem;
 }
 /*EXPLORE*/
-
+.explore-grid-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  max-width: 1200px;
+  margin: 0 auto;
+  grid-gap: 1.6rem;
+  grid-template-areas:
+    "hero hero hero"
+    "eheader1 eheader1 eheader1"
+    "ecard1 ecard2 ecard3"
+    "ecard4 ecard5 blank"
+    "eheader2 eheader2 eheader2"
+    "e2card1 e2card2 e2card3"
+  ;
+}
+.eheader{
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+  margin-top: 10px;
+}
+.explore-card{
+  background-color: #FFFFFF;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+}
+.explore-card-image{
+  height: 250px;
+  background-position: center;
+}
+.explore-card-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.explore-card-content{
+  padding: 1rem 1.2rem;
+}
+.explore-card-content h3{
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-bottom: 6px;
+}
+.explore-card-content p{
+  color: #000000e0;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.3;
+}
+.explore-card-content .learn-more-btn{
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #FF8C1A;
+  text-decoration: none;
+  border-radius: 4px;
+  margin: 16px 0;
+  color: #000000d2;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 1.05rem;
+  font-weight: 400;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+.explore-card-content .learn-more-btn:hover{
+  text-decoration: underline;
+}
+#exhibition-spaces{
+  grid-area: eheader1;
+}
+#cosmology{
+  grid-area: ecard1;
+}
+#evolution{
+  grid-area: ecard2;
+}
+#biology-and-medicine{
+  grid-area: ecard3;
+}
+#robotics-and-ai{
+  grid-area: ecard4;
+}
+#ecology{
+  grid-area: ecard5;
+}
+#special-events{
+  grid-area: eheader2;
+  margin-top: 20px;
+}
+#visiting-professor-of-aeronautics{
+  grid-area: e2card1;
+}
+#night-in-the-museum{
+  grid-area: e2card2;
+}
+#energetica-exhibition-on-loan{
+  grid-area: e2card3;
+}
 /*VISIT*/
 /*main*/
 .visit-grid-container{
@@ -266,6 +363,23 @@ footer{
   #menu-checkbox:checked ~ ul{
     display: block;
   }
+/*explore main*/
+  .explore-grid-container{
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "hero"
+      "eheader1"
+      "ecard1" 
+      "ecard2" 
+      "ecard3"
+      "ecard4"
+      "ecard5"
+      "eheader2"
+      "e2card1"
+      "e2card2" 
+      "e2card3"
+    ;
+}
 /*visit main*/
   .visit-grid-container{
     grid-template-columns: 1fr;
